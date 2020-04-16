@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/stylesEdit.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Update Product</title>
+</head>
+<header>
+    <div class="wrapper">
+        <div class="logo">
+            <img src="/images/logo.png" alt="">
+        </div>
+        <ul class="nav-area">
+            <li><a href="home">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="product">Product</a></li>
+            <li><a href="login">Login</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <body>
+        <div class="updateform">
+            <div class="container"></div>
+            <h2>Update Product</h2>
+            <form action="edit" enctype="multipart/form-data" method="POST">
+                <input type="hidden" name="_id" value="{{product._id}}">
+                <div class="form-group">
+                    <label for="name"></label>Product Name</label>
+                    <input type="text" class="form-control" name="name" value="{{product.ProductName}}">
+                </div>
+                <div class="form-group">
+                    <label for="category"></label>Category</label>
+                    <input type="text" class="form-control" name="category" value="{{product.Category}}">
+                </div>
+                <div class="form-group">
+                    <label for="price"></label>Price</label>
+                    <input type="text" class="form-control" name="price" value="{{product.Price}}">
+                </div>
+                <div>
+                    <input type="file" name="picture" accept="image/*" >
+                </div>
+                <button type="submit" class="btn btn-danger">Update</button>
+            </form>
+        </div>
+        </div>
+
+    </body>
+</header>
+
+</html>

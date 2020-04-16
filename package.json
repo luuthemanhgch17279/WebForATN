@@ -1,0 +1,33 @@
+{
+  "name": "webatn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "consolidate": "^0.15.1",
+    "express": "^4.17.1",
+    "fs-extra": "^9.0.0",
+    "handlebars": "^4.7.6",
+    "hbs": "^4.1.1",
+    "local": "^0.3.3",
+    "mongodb": "^3.5.5",
+    "multer": "^1.4.2",
+    "passport": "^0.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luuthemanhgch17279/WebForATN.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luuthemanhgch17279/WebForATN/issues"
+  },
+  "homepage": "https://github.com/luuthemanhgch17279/WebForATN#readme"
+}
