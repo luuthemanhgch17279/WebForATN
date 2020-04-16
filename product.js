@@ -67,7 +67,6 @@ router.get('/edit', async (req, res) => {
     res.render('editProduct', { product: result });
 })
 //update product (POST method)
-
 router.post('/edit',upload.single('picture'), async(req, res)=>{
     var img = fs.readFileSync(req.file.path);
     var encode_image = img.toString('base64');
