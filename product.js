@@ -67,21 +67,6 @@ router.get('/edit', async (req, res) => {
     res.render('editProduct', { product: result });
 })
 //update product (POST method)
-/*router.post('/edit', async (req, res) => {
-    let id = req.body.id;
-    let name = req.body.name;
-    let category = req.body.category;
-    let price = req.body.price;
-    let newValues = { $set: { ProductName: name, Category: category, Price: price}};
-    var ObjectID = require('mongodb').ObjectID;
-    let condition = { "_id": ObjectID(id) };
-
-    let client = await MongoClient.connect(url);
-    let dbo = client.db("ATN_DB");
-    await dbo.collection("Product").updateOne(condition, newValues);
-    let results = await dbo.collection("Product").find({}).toArray();
-    res.render('productPage', { product: results });
-})*/
 
 router.post('/edit',upload.single('picture'), async(req, res)=>{
     var img = fs.readFileSync(req.file.path);
