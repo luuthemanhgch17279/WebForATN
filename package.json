@@ -4,7 +4,6 @@
   "engines": {
     "node": "12.16.1"
   },
-  "description": "",
   "main": "index.js",
   "dependencies": {
     "bcrypt": "^4.0.1",
@@ -32,5 +31,6 @@
   "bugs": {
     "url": "https://github.com/luuthemanhgch17279/WebForATN/issues"
   },
-  "homepage": "https://github.com/luuthemanhgch17279/WebForATN#readme"
+  "homepage": "https://github.com/luuthemanhgch17279/WebForATN#readme",
+  "description": ""
 }

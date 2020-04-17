@@ -9,7 +9,7 @@
 }
 
 header{
-    background:url(/images/background.jpg);
+    background: url(/images/background.jpg);
     height: 100vh;
     -webkit-background-size:cover;
     background-size: cover;
