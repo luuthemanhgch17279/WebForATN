@@ -22,7 +22,7 @@ res.sendFile(__dirname + '/home');
 
 //Home page
 var homeController = require("./home.js");
-app.use('/home', homeController);
+app.use('/', homeController);
 //Product page
 var productController = require("./product.js");
 app.use('/product', productController);
